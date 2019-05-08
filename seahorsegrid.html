@@ -6,9 +6,36 @@
 
   <style>
 
-@@media only screen and (min-width:768px){
+body {
+background:#c6fff7;
+}
+nav{background:#f8ffc9;}
+article{background:#c9d6ff;}
+footer{background:#ffe8fb;}
 
 
+nav a{
+  color:black;
+  text-decoration:none;
+  display: block;
+  background: #FFDAB9;
+  width: 150px;
+  height:20px;
+  margin: 5px;
+  padding:5px;
+  border: 1px solid black;
+  border-radius:20px;
+  text-align:center;
+
+}
+
+footer li {display: block;}
+
+@media only screen and (min-width:768px) {
+
+  body {
+  background:#d6e5ff;
+  }
 
   .grid {
       display: grid;
@@ -16,11 +43,29 @@
       grid-gap: 10px;
   }
 
+  nav a{
+    color:black;
+    text-decoration:none;
+    display: block;
+    background: #FFDAB9;
+    width: 150px;
+    height:50px;
+    margin: 10px;
+    padding:10px;
+    border: 1px solid black;
+    border-radius:20px;
+    text-align:center;
+
+  }
 
   .span-col-2{grid-column: span 2 / auto;}
 
 
   .span-col-3{grid-column: span 3 / auto;}
+
+.grid{
+width:80%auto;
+margin:auto;}
 
 #title {background:#8cb8ff;}
 
@@ -31,6 +76,8 @@ nav{background:#f4c0ef;}
 article{background:#f4f4c0;}
 
 footer{background:#dcc0f4;}
+
+footer li {display: inline-block;}
 }
 </style>
 
@@ -46,13 +93,14 @@ footer{background:#dcc0f4;}
   <div id="image"><img src="download-4.jpg" alt="image of blue seahorse"></div>
 
   <nav>
+    <h1>NAVIGATION</h1>
     <ul>
-      <li><a href="#">Seahorse Home</a></li>
-      <li><a href="#">Seahorse News</a></li>
-      <li><a href="#">Seahorse Science</a></li>
-      <li><a href="#">Seahorse Fiction</a></li>
-      <li><a href="#">Seahorse Fables</a></li>
-      <li><a href="#">Seahorse Songs</a></li>
+      <a href="#">Seahorse Home</a></li>
+      <a href="#">Seahorse News</a></li>
+      <a href="#">Seahorse Science</a></li>
+      <a href="#">Seahorse Fiction</a></li>
+      <a href="#">Seahorse Fables</a></li>
+      <a href="#">Seahorse Songs</a></li>
     </ul>
   </nav>
 
